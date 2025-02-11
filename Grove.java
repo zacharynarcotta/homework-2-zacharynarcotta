@@ -23,12 +23,12 @@ public class Grove {
     }
 
     public String toString() {
-        String toPrint = "";
+        int numTrees = 0;
         for(int i = 0; i < groupTrees.length; i++) {
             if(groupTrees[i] != null) {
-                toPrint += groupTrees[i].toString();
+                numTrees++;
             }
         }
-        return toPrint;
+        return "" + numTrees;
     }
 }
